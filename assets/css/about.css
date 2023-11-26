@@ -1,0 +1,51 @@
+.aboutpage-area {
+    background-color: var(--bg__grey--light);
+    padding: 2.5rem 1rem;
+}
+.aboutpage-content {
+    padding: 2rem;
+}
+.aboutpage-content h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: var(--text__regular);
+    color: var(--text-color__red);
+}
+.aboutpage-content-paragraph {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.aboutpage-content-wrap {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.aboutpage-content__img {
+    width: 50%;
+    padding: 2rem;
+}
+.aboutpage-content__detail {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media screen and (max-width: 426px) {
+    .aboutpage-content {
+        paddding: 1rem;
+    }
+    .aboutpage-content-wrap {
+        flex-wrap: wrap;
+    }
+    .aboutpage-content__img {
+        width: 100%;
+    }
+    .aboutpage-content__detail {
+        width: 100%;
+    }
+}
+
