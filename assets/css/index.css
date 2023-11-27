@@ -463,7 +463,6 @@ img {
 }
 /* css giới thiệu */
 .about{
-    background-image: url("/assets/imgs/bg/digital-02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
