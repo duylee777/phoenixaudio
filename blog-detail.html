@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phoenix Audio - Âm thanh chuyên nghiệp">
+    <link rel="phoenix audio shortcut icon" href="assets/imgs/logo/favicon.ico" type="image/x-icon">
+    <title>Phoenix Audio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/breadcrumb.css">
+</head>
+<body>
+    <header class="header-area">
+        <div class="header-area__desktop">
+            <div class="fixed-mask">
+                <div class="header-wrap header-wrap--fixed">
+                    <div class="trademark">
+                        <a href="#" class="trademark__link">
+                            <div class="trademark__logo">
+                                    <img src="assets/imgs/brands/phoenix.png" alt="">
+                            </div>
+                            <!-- <span class="trademark__name">phoenix audio</span> -->
+                        </a>
+                    </div>
+                    <nav class="mainmenu">
+                        <a href="about.html" class="mainmenu__link">Về chúng tôi</a>
+                        <a href="project.html" class="mainmenu__link">Dự án</a>
+                        <a href="blog.html" class="mainmenu__link">Bài viết</a>
+                        <a href="contact.html" class="mainmenu__link">Liên hệ</a>
+                        <a href="agency.html" class="mainmenu__link">Đại lý</a>
+                        <a href="support.html" class="mainmenu__link">Hỗ trợ</a>
+                    </nav>
+                    <div class="searchbar">
+                        <form action="">
+                            <input type="text" placeholder="Nhập từ khóa bạn muốn tìm kiếm ...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="morewrap">
+                        <div class="dropdown">
+                            <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-globe"></i></button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-menu__link">English</a>
+                                <a href="#" class="dropdown-menu__link">Tiếng Việt</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-circle-user"></i></button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-menu__link">Đăng nhập</a>
+                                <a href="#" class="dropdown-menu__link">Tạo tài khoản</a>
+                            </div>
+                        </div>
+                        <!-- <button id="moreButton" class="morewrap__btn"><i class="fa-solid fa-ellipsis-vertical"></i></button> -->
+                        <!-- test -->
+                        <button id="moreButton" class="btn morewrap__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                        <div class="m-area offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                                <button type="button" class="morewrap__btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="m-mainmenu">
+                                    <a href="about.html" class="mainmenu__link m-mainmenu__link">Về chúng tôi</a>
+                                    <a href="project.html" class="mainmenu__link m-mainmenu__link">Dự án</a>
+                                    <a href="blog.html" class="mainmenu__link m-mainmenu__link">Bài viết</a>
+                                    <a href="contact.html" class="mainmenu__link m-mainmenu__link">Liên hệ</a>
+                                    <a href="agency.html" class="mainmenu__link m-mainmenu__link">Đại lý</a>
+                                    <a href="support.html" class="mainmenu__link m-mainmenu__link">Hỗ trợ</a>
+                                </nav>
+                                <div class="m-product-portfolio-wrap">
+                                    <button id="toggleMenuMobileBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
+                                    <div class="m-product-portfolio-toggle">
+                                        <ul class="m-product-portfolio">
+                                            <li class="m-product-wrap">
+                                                <div class="m-product">
+                                                    <a href="product-list.html" class="m-product__link">Loa Subwoofer</a>
+                                                    <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                                <ul class="m-sub-product-portfolio">
+                                                    <li class="m-sub-product-wrap">
+                                                        <div class="m-sub-product">
+                                                            <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="m-sub-product-wrap">
+                                                        <div class="m-sub-product">
+                                                            <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="m-product-wrap">
+                                                <div class="m-product">
+                                                    <a href="" class="m-product__link">Loa Subwoofer</a>
+                                                    <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                                <ul class="m-sub-product-portfolio">
+                                                    <li class="m-sub-product-wrap">
+                                                        <div class="m-sub-product">
+                                                            <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="m-sub-product-wrap">
+                                                        <div class="m-sub-product">
+                                                            <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end test -->
+                    </div>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="header-wrap">
+                    <div class="toggle-menu">
+                        <button id="toggleMenuBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
+                    </div>
+                    <div class="brands">
+                        <nav>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/nexo.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/nova.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/powersoft.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/lspro.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/dmx1.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/magicktv.png" alt="" width="60">
+                            </a>
+                            <a href="" class="brands__name">
+                                <img src="assets/imgs/brands/phoenix.png" alt="" width="60">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="product-portfolio-toggle">
+                    <ul class="product-portfolio">
+                        <li class="product-wrap">
+                            <a href="product-list.html" class="product__link">Loa Subwoofer<i class="fa-solid fa-angle-right"></i></a>
+                            <ul class="sub-product-portfolio">
+                                <li class="sub-product-wrap">
+                                    <a href="" class="sub-product__link">nexo<i class="fa-solid fa-arrow-right"></i></a>
+                                    <ul class="sub-product-portfolio h__category-submenu__v3">
+                                        <div class="category-info">
+                                            <div class="category-info__thumnail">
+                                                <img src="assets/imgs/category/nexo.png" alt="">
+                                            </div>
+                                            <div class="category-info__detail">
+                                                <h3>Loa subwoofer nexo</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat doloribus distinctio provident! Similique repellat nobis corporis quae fugit numquam. Id eveniet quaerat modi autem vitae magnam totam atque aperiam.</p>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="sub-product-wrap">
+                                    <a href="" class="sub-product__link">dmx<i class="fa-solid fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="homebanner">
+       <div class="homebanner__mask">
+            <video autoplay muted loop>
+                <source src="assets/videos/banner-audio-homepage.mp4" type="video/mp4">
+            </video>
+       </div>
+    </section>
+    <section class="cushion-layer"></section>
+    <section class="breadcrumb-area">
+        <div class="breadcrumb">
+            <a href="">Trang chủ</a>
+            <span>&gt;</span>
+            <a href="">Bài viết</a>
+            <span>&gt;</span>
+            <span>Native Library additions: Antelope Audio adds classic tube compressors and specialist EQs</span>
+        </div>
+    </section>
+    <section class="s-area blogpage-area">
+        <div class="s-header">
+            <div class="inner-link">
+                <a href="">Atlas i8</a>
+                <a href="">MRC</a>
+                <a href="">NAMM Show</a>
+                <a href="">News</a>
+                <a href="">Orion 32+ Gen4</a>
+                <a href="">Synergy Core Native</a>
+            </div>
+            <h1 class="s-header__title">Native Library additions: Antelope Audio adds classic tube compressors and specialist EQs</h1>
+        </div>
+        <div class="s-main blogpage-wrap">
+            <div class="m-news">
+                <div class="post-news">
+                    <p>Tired, but happy and eternally grateful for meeting all of you – that’s our usual state of body and mind after this year NAMM is officially wrapped up. This year was one of our most special appearances at the most important US audio tech expo. We lifted the curtains on a ton of new products, we held memorable sessions with some of the world’s leading audio pros, and last but not least we managed to hang out with everyone from the Antelope Audio family and friends who took a minute of their precious time to stop by our booth talk to us, ask questions and share thoughts and ideas. As you know all too well, we keep our ears open for your feedback and it’s always been a major driving force for our constant desire to keep pushing ourselves further and further.</p>
+                    <h2>Four new products</h2>
+                    <p>Without a doubt, the biggest hit on our booth was the four new products we announced, starting with our first-ever monitor speakers Atlas i8. Expected later this year, they feature a three-way isobaric speaker design with custom Class-D 400W amplifiers for an extended low-end and a ton of digitally adjustable features, delivering accurate reproduction from 35 to 20 000 Hz with a maximum SPL of 117dB, all packed in a compact form factor. The Atlas i8 studio speakers were definitely a highlight on our booth so keep your eyes peeled for more news about them.</p>
+                    <img src="/assets/imgs/blogs/baiviet1.jpg" alt="">
+                    <p>We’re not the only ones to notice immersive sound is the future of audio, especially when it comes down to TV, cinema, and video games. During NAMM 2023 we presented the MRC monitor controller – a hardware extension to our Dolby Atmos surround sound ecosystem, compatible with the Galaxy 32. This tool drastically eases the immersive sound workflow and makes dealing with complex and multichannel sessions a breeze.<br> To add to our Atmos-ready ecosystem, a legend returns, yes, we’re talking about Orion 32+ | Gen4. The latest revision of our absolute best-selling audio interface gets both a hardware and software boost, making an already established interface an absolute leader in its class.</p>
+                    <img src="/assets/imgs/blogs/baiviet2.jpg" alt="">
+                    <p>Last but not least, our hardware-quality audio effects are finally going native. This is something all of you have been expecting and we couldn’t think of a better place and time than NAMM to drop the news. Very soon everyone, regardless of their gear and DAW of choice, will be able to explore our ever-growing library of audio plugins, which are meticulously, component by component, modeled after classic audio gear, among which EQs, compressors, mic pres, you name it.</p>
+                    <h2>SESSIONS WITH THE PROS</h2>
+                    <p>While putting this show together we wanted to cover a wide range of topics so everyone who attended could make the best of their time at our booth. During the expo, we had five sessions with some of the industry’s busiest people. We have the absolute privilege of calling them not only partners but friends and we had the chance to share their knowledge with you. <br>Seven-time Grammy Award Winner Brian Vibberts, who’s worked with everyone from Michael Jackson to Aerosmith and Green Day, shared insights about his overall experience with the Antelope Audio products and our line of audio FX in particular. ProTools expert and journalist James Ivey shed some light on our upcoming native audio effects. <a>Mic Locker Goddess Sylvia Massi </a>talked about Immersive Audio, one of the hottest topics in the industry right now. Alongside multi-platinum recording and <a href="">mixing engineer Todd Burke</a> they also showcased our Atmos-ready setup. Last but not least, we had the audio engineer and educator Nik Georgiev present the brand new Antelope Audio line of isobaric monitor speakers, not without the help of our own product manager <a href="">Momchil Shishkov.</a> </p>
+                    <img src="/assets/imgs/blogs/baiviet3.jpg" alt="">
+                    <img src="/assets/imgs/blogs/baiviet4.jpg" alt="">
+                    <h2>NAMM 2023 WAS BUSTLING</h2>
+                    <p>According to the official stats over 50,000 visitors attended this year’s exhibition. The audience was diverse and dedicated – we’ve met producers, mixing and recording engineers, sound designers, composers, musicians, brand ambassadors, and colleagues of hundreds of companies. What brought us all together was our love for music and sound. We were delighted to hang out with Kfir Ochaion, Maor Appelbaum, Paul Frederick Irizarry Suau – Echo, Chris Taylor, Vahagn Stepanyan, John Krivit and Warren Huart among others. <br> A huge thank you to all new and old friends we managed to hang out with. We’re now more motivated than ever to provide you with innovative, bold, and powerful audio technologies for every possible studio setup or scenario.</p>
+                    <img src="/assets/imgs/blogs/baiviet5.jpg" alt="">
+                </div>
+                <div class="lists-news">
+                    <h4 class="head-more-news">The Antelope Audio family</h4>
+                    <div class="more-news">
+                        <a href="" class="entry-image">
+                            <img src="/assets/imgs/blogs/blog2.jpg" alt="">
+                        </a>
+                        <a href="" class="entry-title">
+                            <h4>Testing Zen Q Synergy Core in the woods</h4>
+                        </a>
+                    </div>
+                    <div class="more-news">
+                        <a href="" class="entry-image">
+                            <img src="/assets/imgs/blogs/blog3.jpg" alt="">
+                        </a>
+                        <a href="" class="entry-title">
+                            <h4>Testing Zen Q Synergy Core in the woods</h4>
+                        </a>
+                    </div>
+                    <div class="more-news">
+                        <a href="" class="entry-image">
+                            <img src="/assets/imgs/blogs/blog4.jpg" alt="">
+                        </a>
+                        <a href="" class="entry-title">
+                            <h4>Testing Zen Q Synergy Core in the woods</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="f-header">
+            <div class="f-logo">
+                <img src="assets/imgs/logo/phoenixaudio_logo.png" alt="">
+            </div>
+            <div class="social-network">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-soundcloud"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="f-main">
+            <div class="f-main-column f-main-column-company">
+                <h4 class="f-main-title">Công ty Cổ phần Điện Tử và Công nghệ Phượng Hoàng</h4>
+                <div class="f-main-list">
+                    <span><i class="fa-solid fa-location-dot"></i> Miền Bắc: Y01-19, An Phú Villa, Dương Kinh,Hà Đông, Hà Nội</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Miền Nam: Số 10 Thống nhất, Phường Tân Thành, Quận Tân Phú, TP. HCM</span>
+                    <span><i class="fa-solid fa-envelope"></i>  dientuphuonghoang@gmail.com</span>
+                    <span><i class="fa-solid fa-phone"></i>  024 6671 1717</span>
+                    <span><i class="fa-solid fa-user"></i>  Mr.Quân: 0933 991 338</span>
+                    <span><i class="fa-solid fa-user"></i>  Mr.Vinh: 0903 468 429</span>
+                </div>
+            </div>
+            <div class="f-main-column">
+                <h4 class="f-main-title">Hỗ trợ khách hàng</h4>
+                <div class="f-main-list">
+                    <a href="">Đơn hàng</a>
+                    <a href="">Thanh toán</a>
+                    <a href="">Chính sách giao hàng</a>
+                    <a href="">Chính sách bán hàng</a>
+                    <a href="">Chính sách đổi trả</a>
+                </div>
+            </div>
+            <div class="f-main-column">
+                <h4 class="f-main-title">Đăng ký để tư vấn</h4>
+                <div class="f-main-list">
+                    <input type="text" placeholder="Your email here...">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>2023 - Công ty Cổ phần Điện Tử và Công nghệ Phượng Hoàng</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+</html>
