@@ -689,23 +689,7 @@ body {
     color: var(--text-color__grey--light);
 }
 
-@media screen and (min-width: 1920px) {
-    body {
-        background-color: var(--bg__black);
-        margin-left: calc((100% - 1920px)/2);
-        margin-right: calc((100% - 1920px)/2);
-    }
-    .mask--fixed {
-        left: calc((100% - 1920px)/2);
-        right: calc((100% - 1920px)/2);
-    }
-    .list-news {
-        grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-    }
-    .f-main {
-        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    }
-}
+
 @media screen and (max-width: 1201px) {
     .searchbar {
         width: 33%;
