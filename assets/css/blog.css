@@ -132,7 +132,18 @@
     font-weight: 300;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 769px) {
+    .post {
+        flex-direction: column;
+    }
+    .img-post {
+        width: 100%;
+    }
+    .content-post {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
     .m-news {
         flex-direction: column;
     }
@@ -142,13 +153,9 @@
     .lists-news {
         width: 100%;
     }
-    .post {
-        flex-direction: column;
-    }
-    .img-post {
-        width: 100%;
-    }
-    .content-post {
-        width: 100%;
+
+    .inner-link {
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 }

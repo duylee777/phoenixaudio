@@ -708,6 +708,9 @@ body {
     .f-main {
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     }
+    .agency-inner {
+        grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    }
 }
 @media screen and (max-width: 1201px) {
     .searchbar {

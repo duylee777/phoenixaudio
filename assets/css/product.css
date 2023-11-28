@@ -115,7 +115,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 576px) {
     .product-wrap {
         flex-direction: column;
         padding-left: 1rem;

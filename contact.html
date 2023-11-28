@@ -9,187 +9,176 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <header class="header-area">
-        <div class="header-area__desktop">
-            <div class="fixed-mask">
-                <div class="header-wrap header-wrap--fixed">
-                    <div class="trademark">
-                        <a href="#" class="trademark__link">
-                            <div class="trademark__logo">
-                                    <img src="assets/imgs/brands/phoenix.png" alt="">
-                            </div>
-                            <!-- <span class="trademark__name">phoenix audio</span> -->
-                        </a>
-                    </div>
-                    <nav class="mainmenu">
-                        <a href="about.html" class="mainmenu__link">Về chúng tôi</a>
-                        <a href="project.html" class="mainmenu__link">Dự án</a>
-                        <a href="blog.html" class="mainmenu__link">Bài viết</a>
-                        <a href="contact.html" class="mainmenu__link">Liên hệ</a>
-                        <a href="agency.html" class="mainmenu__link">Đại lý</a>
-                        <a href="support.html" class="mainmenu__link">Hỗ trợ</a>
-                    </nav>
-                    <div class="searchbar">
-                        <form action="">
-                            <input type="text" placeholder="Nhập từ khóa bạn muốn tìm kiếm ...">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                    <div class="morewrap">
-                        <div class="dropdown">
-                            <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-globe"></i></button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-menu__link">English</a>
-                                <a href="#" class="dropdown-menu__link">Tiếng Việt</a>
-                            </div>
+        <div class="mask__top">
+            <div class="header-wrap">
+                <div class="trademark">
+                    <a href="#" class="trademark__link">
+                        <div class="trademark__logo">
+                                <img src="assets/imgs/brands/phoenix.png" alt="">
                         </div>
-                        <div class="dropdown">
-                            <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-circle-user"></i></button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-menu__link">Đăng nhập</a>
-                                <a href="#" class="dropdown-menu__link">Tạo tài khoản</a>
-                            </div>
+                    </a>
+                </div>
+                <nav class="mainmenu">
+                    <a href="about.html" class="mainmenu__link">Về chúng tôi</a>
+                    <a href="project.html" class="mainmenu__link">Dự án</a>
+                    <a href="blog.html" class="mainmenu__link">Bài viết</a>
+                    <a href="contact.html" class="mainmenu__link">Liên hệ</a>
+                    <a href="agency.html" class="mainmenu__link">Đại lý</a>
+                    <a href="support.html" class="mainmenu__link">Hỗ trợ</a>
+                </nav>
+                <div class="searchbar">
+                    <form action="">
+                        <input type="text" placeholder="Nhập từ khóa bạn muốn tìm kiếm ...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="morewrap">
+                    <div class="dropdown">
+                        <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-globe"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-menu__link">English</a>
+                            <a href="#" class="dropdown-menu__link">Tiếng Việt</a>
                         </div>
-                        <!-- <button id="moreButton" class="morewrap__btn"><i class="fa-solid fa-ellipsis-vertical"></i></button> -->
-                        <!-- test -->
-                        <button id="moreButton" class="btn morewrap__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="morewrap__btn dropdown-btn"><i class="fa-solid fa-circle-user"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-menu__link">Đăng nhập</a>
+                            <a href="#" class="dropdown-menu__link">Tạo tài khoản</a>
+                        </div>
+                    </div>
+                    <button id="moreButton" class="morewrap__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
 
-                        <div class="m-area offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                                <button type="button" class="morewrap__btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <nav class="m-mainmenu">
-                                    <a href="about.html" class="mainmenu__link m-mainmenu__link">Về chúng tôi</a>
-                                    <a href="project.html" class="mainmenu__link m-mainmenu__link">Dự án</a>
-                                    <a href="blog.html" class="mainmenu__link m-mainmenu__link">Bài viết</a>
-                                    <a href="contact.html" class="mainmenu__link m-mainmenu__link">Liên hệ</a>
-                                    <a href="agency.html" class="mainmenu__link m-mainmenu__link">Đại lý</a>
-                                    <a href="support.html" class="mainmenu__link m-mainmenu__link">Hỗ trợ</a>
-                                </nav>
-                                <div class="m-product-portfolio-wrap">
-                                    <button id="toggleMenuMobileBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
-                                    <div class="m-product-portfolio-toggle">
-                                        <ul class="m-product-portfolio">
-                                            <li class="m-product-wrap">
-                                                <div class="m-product">
-                                                    <a href="" class="m-product__link">Loa Subwoofer</a>
-                                                    <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                                </div>
-                                                <ul class="m-sub-product-portfolio">
-                                                    <li class="m-sub-product-wrap">
-                                                        <div class="m-sub-product">
-                                                            <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
-                                                        </div>
-                                                    </li>
-                                                    <li class="m-sub-product-wrap">
-                                                        <div class="m-sub-product">
-                                                            <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="m-product-wrap">
-                                                <div class="m-product">
-                                                    <a href="" class="m-product__link">Loa Subwoofer</a>
-                                                    <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                                </div>
-                                                <ul class="m-sub-product-portfolio">
-                                                    <li class="m-sub-product-wrap">
-                                                        <div class="m-sub-product">
-                                                            <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
-                                                        </div>
-                                                    </li>
-                                                    <li class="m-sub-product-wrap">
-                                                        <div class="m-sub-product">
-                                                            <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="m-area offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                            <button type="button" class="morewrap__btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <nav class="m-mainmenu">
+                                <a href="about.html" class="mainmenu__link m-mainmenu__link">Về chúng tôi</a>
+                                <a href="project.html" class="mainmenu__link m-mainmenu__link">Dự án</a>
+                                <a href="blog.html" class="mainmenu__link m-mainmenu__link">Bài viết</a>
+                                <a href="contact.html" class="mainmenu__link m-mainmenu__link">Liên hệ</a>
+                                <a href="agency.html" class="mainmenu__link m-mainmenu__link">Đại lý</a>
+                                <a href="support.html" class="mainmenu__link m-mainmenu__link">Hỗ trợ</a>
+                            </nav>
+                            <div class="m-product-portfolio-wrap">
+                                <button id="toggleMenuMobileBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
+                                <div class="m-product-portfolio-toggle">
+                                    <ul class="m-product-portfolio">
+                                        <li class="m-product-wrap">
+                                            <div class="m-product">
+                                                <a href="" class="m-product__link">Loa Subwoofer</a>
+                                                <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                                            </div>
+                                            <ul class="m-sub-product-portfolio">
+                                                <li class="m-sub-product-wrap">
+                                                    <div class="m-sub-product">
+                                                        <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
+                                                    </div>
+                                                </li>
+                                                <li class="m-sub-product-wrap">
+                                                    <div class="m-sub-product">
+                                                        <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="m-product-wrap">
+                                            <div class="m-product">
+                                                <a href="" class="m-product__link">Loa Subwoofer</a>
+                                                <span class="m-product__btn-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                                            </div>
+                                            <ul class="m-sub-product-portfolio">
+                                                <li class="m-sub-product-wrap">
+                                                    <div class="m-sub-product">
+                                                        <a href="" class="m-sub-product__link">Loa Subwoofer Nexo</a>
+                                                    </div>
+                                                </li>
+                                                <li class="m-sub-product-wrap">
+                                                    <div class="m-sub-product">
+                                                        <a href="" class="m-sub-product__link">Loa Subwoofer DMX</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- end test -->
                     </div>
-                </div>
-            </div>
-            <div class="mask">
-                <div class="header-wrap">
-                    <div class="toggle-menu">
-                        <button id="toggleMenuBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
-                    </div>
-                    <div class="brands">
-                        <nav>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/nexo.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/nova.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/powersoft.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/lspro.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/dmx1.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/magicktv.png" alt="" width="60">
-                            </a>
-                            <a href="" class="brands__name">
-                                <img src="assets/imgs/brands/phoenix.png" alt="" width="60">
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="product-portfolio-toggle">
-                    <ul class="product-portfolio">
-                        <li class="product-wrap">
-                            <a href="product-list.html" class="product__link">Loa Subwoofer<i class="fa-solid fa-angle-right"></i></a>
-                            <ul class="sub-product-portfolio">
-                                <li class="sub-product-wrap">
-                                    <a href="" class="sub-product__link">nexo<i class="fa-solid fa-arrow-right"></i></a>
-                                    <ul class="sub-product-portfolio h__category-submenu__v3">
-                                        <div class="category-info">
-                                            <div class="category-info__thumnail">
-                                                <img src="assets/imgs/category/nexo.png" alt="">
-                                            </div>
-                                            <div class="category-info__detail">
-                                                <h3>Loa subwoofer nexo</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat doloribus distinctio provident! Similique repellat nobis corporis quae fugit numquam. Id eveniet quaerat modi autem vitae magnam totam atque aperiam.</p>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                </li>
-                                <li class="sub-product-wrap">
-                                    <a href="" class="sub-product__link">dmx<i class="fa-solid fa-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
+                    <!-- end test -->
                 </div>
             </div>
         </div>
+        <div class="mask">
+            <div class="header-wrap">
+                <div class="toggle-menu">
+                    <button id="toggleMenuBtn"><i class="fa-solid fa-bars-staggered"></i> <span>Danh mục sản phẩm</span></button>
+                </div>
+                <div class="brands">
+                    <nav>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/nexo.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/nova.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/powersoft.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/lspro.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/dmx1.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/magicktv.png" alt="" width="60">
+                        </a>
+                        <a href="" class="brands__name">
+                            <img src="assets/imgs/brands/phoenix.png" alt="" width="60">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="product-portfolio-toggle">
+                <ul class="product-portfolio">
+                    <li class="product-wrap">
+                        <a href="product-list.html" class="product__link">Loa Subwoofer<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sub-product-portfolio">
+                            <li class="sub-product-wrap">
+                                <a href="" class="sub-product__link">nexo<i class="fa-solid fa-arrow-right"></i></a>
+                                <ul class="sub-product-portfolio h__category-submenu__v3">
+                                    <div class="category-info">
+                                        <div class="category-info__thumnail">
+                                            <img src="assets/imgs/category/nexo.png" alt="">
+                                        </div>
+                                        <div class="category-info__detail">
+                                            <h3>Loa subwoofer nexo</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat doloribus distinctio provident! Similique repellat nobis corporis quae fugit numquam. Id eveniet quaerat modi autem vitae magnam totam atque aperiam.</p>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="sub-product-wrap">
+                                <a href="" class="sub-product__link">dmx<i class="fa-solid fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="homebanner">
-       <div class="homebanner__mask">
-            <video autoplay muted loop>
-                <source src="assets/videos/banner-audio-homepage.mp4" type="video/mp4">
-            </video>
-       </div>
-    </section>
+    
     <section class="cushion-layer"></section>
     <section class="breadcrumb-area">
         <div class="breadcrumb">
