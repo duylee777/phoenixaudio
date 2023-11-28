@@ -441,10 +441,6 @@ body {
 
 
 /* css main */
-.cushion-layer {
-    /* height: 40rem; */
-    margin-top: 40rem;
-}
 /* css section */
 .s-header {
     text-align: center;
@@ -689,6 +685,13 @@ body {
     color: var(--text-color__grey--light);
 }
 
+.no-video {
+    background-color: var(--bg__black);
+}
+/* .category-info {
+    background-color: var(--bg__black);
+} */
+
 @media screen and (min-width: 1920px) {
     body {
         background-color: var(--bg__black);
@@ -811,6 +814,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .cushion-layer {
+        display: none;
+    }
     .header-area {
         position: unset;
         background: black;

@@ -55,3 +55,20 @@ $(function() {
         }
     });
 });
+
+var isNone = $('.homebanner').length;
+if(isNone == 0) {
+    $('.header-area').addClass('no-video');
+    $('.category-info').css('background-color','var(--bg__black)');
+    if(screen.width >= 577) {
+        $('.cushion-layer').height($('.header-area').height()+32);
+    }
+}
+$(window).resize(function(){
+    if(screen.width >= 577) {
+        $('.cushion-layer').height($('.header-area').height()+32);
+    }
+    else {
+        $('.cushion-layer').height(0);
+    }
+})

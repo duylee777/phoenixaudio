@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 426px) {
     .aboutpage-content {
-        paddding: 1rem;
+        padding: 1rem;
     }
     .aboutpage-content-wrap {
         flex-wrap: wrap;
