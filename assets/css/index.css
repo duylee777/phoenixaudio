@@ -54,12 +54,12 @@ body {
     left: 0;
     right: 0;
     z-index: 3;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
 }
-
+.mask {
+    border-top: 2px solid orangered;
+}
 .mask--fixed {
     background-color: var(--bg__black);
     position: fixed;
@@ -67,19 +67,25 @@ body {
     left: 0;
     right: 0;
     z-index: 2;
-    padding: 1rem;
 }
 .header-wrap {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1.25rem 5rem;
+}
+.header-wrap--gray {
+    background: rgba(128,128,128, 0.4);
 }
 /* .header-wrap--fixed { 
  
 } */
 
-.trademark {
+/* .trademark {
     width: 20%;
+} */
+.trademark {
+    width: 7%;
 }
 .trademark__link {
     display: flex;
@@ -99,7 +105,8 @@ body {
 }
 
 .mainmenu {
-    width: 45%;
+    /* width: 45%; */
+    width: 58%;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
@@ -181,6 +188,13 @@ body {
 }
 #moreButton {
     /* position: relative; */
+    width: 32px;
+    height: 32px;
+    border: 1px solid orange;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
     display: none;
 }
 /* #moreButton::before {
@@ -206,14 +220,15 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     color: var(--text-color__white);
     text-transform: uppercase;
     font-weight: var(--text__semibold);
     cursor: pointer;
-    background: transparent;
-    border-right: 2px solid var(--bg__grey--light);
-    border-bottom: 1px solid var(--bg__grey--light);
+    background: orangered;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px black;
 }
 .brands {
     width: 80%;
@@ -250,19 +265,18 @@ body {
 
 .product-portfolio-toggle {
     display: none;
+    padding: 0 5rem;
 }
 .product-portfolio {
-    background-color: transparent;
+    background-color: rgba(128,128,128, 0.4);
     list-style-type: none;
-    padding-left: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     position: relative;
     width: 25%;
 }
-.product-wrap {
+/* .product-wrap {
     padding-right: 1rem;
-}
+} */
 .product-wrap:hover > .sub-product-portfolio {
     display: block;
 }
@@ -273,11 +287,15 @@ body {
     color: var(--bg__grey--regular);
     text-transform: uppercase;
     font-weight: var(--text__semibold);
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--bg__grey--light);
 }
 .product__link:hover {
-    color: var(--text-color__white);
+    /* color: var(--text-color__white); */
+    color: orangered;
+}
+.product__link i {
+    color: orange;
 }
 /* submenu */
 .sub-product-portfolio {
@@ -286,9 +304,8 @@ body {
     top: 0;
     bottom: 0;
     right: -100%;
-    background-color: transparent;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: rgba(128,128,128, 0.4);;
+    padding: 1rem 0;
     list-style-type: none;
     display: none;
 }
@@ -352,6 +369,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 96vh;
 }
 .homebanner__mask::after {
     content: '';
@@ -375,7 +393,7 @@ body {
 .m-area {
     background: rgba(0,0,0,0.8);
 }
-.m-mainmenu {}
+
 .m-mainmenu__link {
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--bg__grey--light);
@@ -439,6 +457,48 @@ body {
     border-bottom: 1px solid var(--bg__grey--light);
 }
 
+.homeabout-area {
+    width: 50%;
+    margin: 5rem;
+    padding-left: 2rem;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+    background-color: rgba(128,128,128, 0.4);
+    border-radius: 2rem;
+}
+.homeabout-wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    border-left: 1rem solid orange;
+    position: relative;
+}
+.homeabout-title {
+    position: absolute;
+    top: -48px;
+}
+.homeabout-title h5 {
+    color: white;
+}
+.homeabout-title h2 {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    text-shadow: -1px 1px 5px orange;
+    letter-spacing: 16px;
+}
+.homeabout__content h5 {
+    color: orange;
+    text-transform: uppercase;
+}
+.homeabout__content p {
+    color: white;
+    font-weight: 300;
+}
 
 /* css main */
 /* css section */
@@ -611,7 +671,6 @@ body {
 /* end css main */
 
 /* footer */
-
 /* update footer */
 #footer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -824,8 +883,15 @@ body {
     }
 }
 @media screen and (max-width: 993px) {
+    .header-wrap {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .trademark {
+        width: 10%;
+    }
     .mainmenu {
-        width: 50%;
+        /* width: 60%; */
         gap: 0.875rem;
     }
     .searchbar {
@@ -842,11 +908,14 @@ body {
         display: none;
     }
     .morewrap #moreButton {
-        display: block;
+        display: flex;
     }
     #toggleMenuBtn {
         padding: 0.5rem;
         font-size: 0.625rem;
+    }
+    .homeabout-area {
+        width: 70%;
     }
 
     .content-about {
@@ -876,20 +945,29 @@ body {
     .header-wrap {
         justify-content: space-between;
     }
-    .trademark {
-        width: 30%;
+    .homeabout-area {
+        /* width: 100%; */
     }
+    /* .trademark {
+        width: 30%;
+    } */
     .mainmenu {
         display: none;
     }
     .searchbar {
-        width: 55%;
+        width: 80%;
+    }
+    .morewrap {
+        width: 10%;
+    }
+    .searchbar form {
+        text-align: end;
     }
     .searchbar form input {
-        padding-left: 1.5rem;
+        width: 70%;
         font-size: 0.875rem;
-        padding-top: 0.875rem;
-        padding-bottom: 0.875rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .brands nav {
         flex-wrap: wrap;
@@ -916,6 +994,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .header-wrap {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .homebanner__mask {
+        height: auto;
+    }
     .cushion-layer {
         display: none;
     }
@@ -928,7 +1013,7 @@ body {
         row-gap: 1rem;
         column-gap: unset;
     }
-    .trademark {
+    /* .trademark {
         width: 50%;
     }
     .trademark__logo {
@@ -940,6 +1025,18 @@ body {
     }
     .morewrap {
         width: 50%;
+    } */
+    .trademark {
+        width: 17%;
+    }
+    .searchbar {
+        width: 70%;
+    }
+    .searchbar form input {
+        width: 90%;
+    }
+    .morewrap {
+        width: 13%;
     }
     .brands__name img {
         width: 60px;
