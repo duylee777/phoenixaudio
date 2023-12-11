@@ -939,6 +939,12 @@ body {
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
+    .toggle-menu {
+        display: none;
+    }
+    .brands {
+        width: 100%;
+    }
     
 }
 @media screen and (max-width: 769px) {
@@ -973,12 +979,8 @@ body {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .toggle-menu {
-        display: none;
-    }
-    .brands {
-        width: 100%;
-    }
+ 
+   
     .brands__name img {
         width: 70px;
     }
