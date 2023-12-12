@@ -1,6 +1,6 @@
 .breadcrumb-area {
     background-color: var(--bg__grey--light);
-    padding: 1rem;
+    padding: 1rem 0;
 }
 .breadcrumb {
     display: flex;
